@@ -10,7 +10,7 @@ GPIO.setup(green, GPIO.OUT)
 GPIO.setup(yellow, GPIO.OUT)
 GPIO.setup(red, GPIO.OUT)
 
-while true
+while True
     GPIO.output(red, False)
     GPIO.output(green, True)
     time.sleep(2)
