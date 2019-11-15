@@ -2,12 +2,13 @@ from time import sleep
 import RPi.GPIO as GPIO #gives us access to the GPIO pins
 GPIO.setmode(GPIO.BCM)  #sets the pin numbering system we want to use
 
-LED = 21
+LED = 17                #pin number driving the LED
+delay = 1               #change this number to adjust the frequency at which the light blinks
 GPIO.setup(LED,GPIO.OUT)
 
 while True:
     GPIO.output(LED,True)
-    sleep(1)
+    sleep(delay)
 
     GPIO.output(LED,False)
-    sleep(1)
+    sleep(delay)

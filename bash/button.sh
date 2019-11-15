@@ -1,10 +1,7 @@
-gpio -g mode 27 out #green
-gpio -g mode 22 out #yellow
-gpio -g mode 17 out #red
+gpio -g mode 25
 
 while true; do
-gpio -g write 17 0
-gpio -g write 27 1
+if [ gpio]
 sleep 2
 
 gpio -g write 27 0

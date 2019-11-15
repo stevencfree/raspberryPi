@@ -2,9 +2,9 @@ from time import sleep
 import RPi.GPIO as GPIO #gives us access to the GPIO pins
 GPIO.setmode(GPIO.BCM)  #sets the pin numbering system we want to use
 
-green = 17  #set variables for the pin numbers driving each LED
-yellow = 27
-red = 22
+green = 27  #set variables for the pin numbers driving each LED
+yellow = 22
+red = 17
 
 GPIO.setup(green, GPIO.OUT)  #configure GPIO pins to output mode
 GPIO.setup(yellow, GPIO.OUT)
