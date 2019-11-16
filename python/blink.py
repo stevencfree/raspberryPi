@@ -7,8 +7,8 @@ delay = 1               #change this number to adjust the frequency at which the
 GPIO.setup(LED,GPIO.OUT)
 
 while True:
-    GPIO.output(LED,True)
+    GPIO.output(LED,True)  #turn LED on
     sleep(delay)
 
-    GPIO.output(LED,False)
+    GPIO.output(LED,False) #turn LED off
     sleep(delay)
