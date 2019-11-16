@@ -1,9 +1,9 @@
 #include <wiringPi.h>
 #include <stdio.h>
 
-const int green = 27;
-const int yellow = 22;
-const int red = 17; 
+const int green = 3;
+const int yellow = 2;
+const int red = 0; 
 
 void setup()
 {
